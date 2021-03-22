@@ -1,0 +1,11 @@
+For Keil uVision this can also be done automatically.
+
+1) Go to Projects->Options for target 'project_name'...
+
+2) Go to the User tab,
+
+3) In Run User Programs After Build/Rebuild...
+
+4) add 'C:\Keil\ARM\ARMCC\bin\fromelf.exe --bin obj\.axf --output .bin' to one of the lines.
+
+This will run the conversion from AXF to BIN automatically after each build.
